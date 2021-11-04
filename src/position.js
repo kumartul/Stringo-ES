@@ -1,7 +1,7 @@
-import isStr from './utils/isStr.js';
+import isStr from "./utils/isStr.js";
 
-import { LOWER_ALPHABETS } from './utils/constants.js';
-import validator from 'validator';
+import { LOWER_ALPHABETS } from "./utils/constants.js";
+import validator from "validator";
 
 // Function: Returns the position of the letter in the alphabet series
 function position(letter){

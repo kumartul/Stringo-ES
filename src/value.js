@@ -1,5 +1,5 @@
-import isStr from './utils/isStr.js';
-import position from './position.js';
+import isStr from "./utils/isStr.js";
+import position from "./position.js";
 
 // Function: Returns the sum of the position of all the alphabets in the string
 function value(string){

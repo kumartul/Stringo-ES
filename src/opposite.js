@@ -1,8 +1,8 @@
-import isStr from './utils/isStr.js';
-import isLower from './isLower.js';
-import { LOWER_ALPHABETS, UPPER_ALPHABETS } from './utils/constants.js';
+import isStr from "./utils/isStr.js";
+import isLower from "./isLower.js";
+import { LOWER_ALPHABETS, UPPER_ALPHABETS } from "./utils/constants.js";
 
-import validator from 'validator';
+import validator from "validator";
 
 // Function: Returns the string with all the characters replaced with their opposite letters
 function opposite(string){

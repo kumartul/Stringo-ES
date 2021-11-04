@@ -1,5 +1,5 @@
-import isStr from './utils/isStr.js';
-import md_5 from 'blueimp-md5';
+import isStr from "./utils/isStr.js";
+import md_5 from "blueimp-md5";
 
 // Function: Hashes a string using md5 algorithm
 function md5(string){

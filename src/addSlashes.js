@@ -1,5 +1,5 @@
-import isStr from './utils/isStr.js';
-import validator from 'validator';
+import isStr from "./utils/isStr.js";
+import validator from "validator";
 
 // Function: Escapes special characters in the string by adding a backward slash before
 // them

@@ -1,7 +1,7 @@
-import isStr from './utils/isStr.js';
-import nth from './nth.js';
-import reverse from './reverse.js';
-import removeWhitespace from './removeWhitespace.js';
+import isStr from "./utils/isStr.js";
+import nth from "./nth.js";
+import reverse from "./reverse.js";
+import removeWhitespace from "./removeWhitespace.js";
 
 // Python-style string slicing
 function pySlice(string, sliceCode){
