@@ -1,4 +1,4 @@
-const isStr = require("./utils/isStr.js");
+import isStr from "./utils/isStr.js";
 
 // Function: Removes all whitespaces from the string
 // If removeExtraOnly is true, then more than one whitespace will be removed
@@ -17,4 +17,4 @@ function removeWhitespace(string, removeExtraOnly=false){
 	}
 }
 
-module.exports = removeWhitespace;
+export default removeWhitespace;

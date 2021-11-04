@@ -1,5 +1,5 @@
-const isStr = require("./utils/isStr.js");
-const has = require("./has.js");
+import isStr from "./utils/isStr.js";
+import has from "./has.js";
 
 // Function: Removes a substring from the string
 function remove(string, substring, removeAll=true){
@@ -21,4 +21,4 @@ function remove(string, substring, removeAll=true){
 	}
 }
 
-module.exports = remove;
+export default remove;

@@ -1,4 +1,4 @@
-const isStr = require("./utils/isStr.js");
+import isStr from "./utils/isStr.js";
 
 // Function: Reverses a string
 function reverse(string){
@@ -12,4 +12,4 @@ function reverse(string){
 	}
 }
 
-module.exports = reverse;
+export default reverse;

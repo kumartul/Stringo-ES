@@ -1,4 +1,4 @@
-const isStr = require("./utils/isStr.js");
+import isStr from "./utils/isStr.js";
 
 // Function: Checks if the string contains a substring or not
 function has(string, substring){
@@ -10,4 +10,4 @@ function has(string, substring){
 	}
 }
 
-module.exports = has;
+export default has;

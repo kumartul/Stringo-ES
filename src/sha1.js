@@ -1,5 +1,5 @@
-const isStr = require('./utils/isStr.js');
-const sha_1 = require('sha1');
+import isStr from './utils/isStr.js';
+import sha_1 from 'sha1';
 
 // Function: Hashes a string using sha1 algorithm
 function sha1(string){
@@ -11,4 +11,4 @@ function sha1(string){
 	}
 }
 
-module.exports = sha1;
+export default sha1;

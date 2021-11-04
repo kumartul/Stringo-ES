@@ -1,6 +1,6 @@
-const isStr = require("./utils/isStr.js");
-const has = require("./has.js");
-const breakStr = require("./breakStr.js");
+import isStr from "./utils/isStr.js";
+import has from "./has.js";
+import breakStr from "./breakStr.js";
 
 // Function: Inserts a string before a substring in a string
 function insertBefore(string, targetSubstring, stringToBeInserted){
@@ -40,5 +40,7 @@ function insertAfter(string, targetSubstring, stringToBeInserted){
 	}
 }
 
-module.exports.insertBefore = insertBefore;
-module.exports.insertAfter = insertAfter;
+const _insertBefore = insertBefore;
+export { _insertBefore as insertBefore };
+const _insertAfter = insertAfter;
+export { _insertAfter as insertAfter };

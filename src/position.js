@@ -1,14 +1,14 @@
-const isStr = require('./utils/isStr.js');
+import isStr from './utils/isStr.js';
 
-const constants = require('./utils/constants.js');
-const validator = require('validator');
+import { LOWER_ALPHABETS } from './utils/constants.js';
+import validator from 'validator';
 
 // Function: Returns the position of the letter in the alphabet series
 function position(letter){
 	if(isStr(letter)){
-		if(validator.default.isAlpha(letter)){
+		if(validator.isAlpha(letter)){
 			if(letter.length === 1){
-				return constants.LOWER_ALPHABETS.indexOf(letter.toLowerCase()) + 1;
+				return LOWER_ALPHABETS.indexOf(letter.toLowerCase()) + 1;
 			}
 			else{
 				throw new RangeError("Failed to execute 'position': Argument's length must be 1");
@@ -23,4 +23,4 @@ function position(letter){
 	}
 }
 
-module.exports = position;
+export default position;

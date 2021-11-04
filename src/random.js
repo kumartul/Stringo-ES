@@ -1,5 +1,5 @@
-const isStr = require("./utils/isStr.js");
-const isInt = require("./utils/isInt.js");
+import isStr from "./utils/isStr.js";
+import isInt from "./utils/isInt.js";
 
 // Function: Returns a random character or characters from the string
 function random(string, length=1){
@@ -22,4 +22,4 @@ function random(string, length=1){
 	}
 }
 
-module.exports = random;
+export default random;

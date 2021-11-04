@@ -1,4 +1,4 @@
-const isStr = require("./utils/isStr.js");
+import isStr from "./utils/isStr.js";
 
 // Function: Empties the string
 function clear(string){
@@ -10,4 +10,4 @@ function clear(string){
 	}
 }
 
-module.exports = clear;
+export default clear;

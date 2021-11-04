@@ -1,12 +1,12 @@
-const isStr = require("./utils/isStr.js");
+import isStr from "./utils/isStr.js";
 
-const Arrayism = require("arrayism");
+import { shuffle as _shuffle } from "arrayism";
 
 // Function: Shuffles the string
 function shuffle(string){
 	if(isStr(string)){
 		let chars = string.split("");
-		chars = Arrayism.shuffle(chars);
+		chars = _shuffle(chars);
 		return chars.join("");
 	}
 	else{
@@ -14,4 +14,4 @@ function shuffle(string){
 	}
 }
 
-module.exports = shuffle;
+export default shuffle;

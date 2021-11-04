@@ -1,4 +1,4 @@
-const isStr = require('./utils/isStr.js');
+import isStr from './utils/isStr.js';
 
 // Function: Filters the specified things from the string
 function filter(string, whatToFilter){
@@ -45,4 +45,4 @@ function filter(string, whatToFilter){
 	}
 }
 
-module.exports = filter;
+export default filter;

@@ -1,4 +1,4 @@
-const isStr = require("./utils/isStr.js");
+import isStr from "./utils/isStr.js";
 
 // Function: Changes the case of the string
 function changeCase(string, stringCase){
@@ -25,4 +25,4 @@ function changeCase(string, stringCase){
 	}
 }
 
-module.exports = changeCase;
+export default changeCase;

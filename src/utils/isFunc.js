@@ -3,4 +3,4 @@ function isFunc(input){
 	return typeof input === "function";
 }
 
-module.exports = isFunc;
+export default isFunc;

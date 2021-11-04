@@ -3,4 +3,4 @@ function isStr(input){
 	return typeof input === "string";
 }
 
-module.exports = isStr;
+export default isStr;

@@ -1,4 +1,4 @@
-const isStr = require("./utils/isStr.js");
+import isStr from "./utils/isStr.js";
 
 // Function: Returns the words in a string
 function words(string){
@@ -10,4 +10,4 @@ function words(string){
 	}
 }
 
-module.exports = words;
+export default words;

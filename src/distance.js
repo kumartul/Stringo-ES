@@ -1,5 +1,5 @@
-const isStr = require("./utils/isStr.js");
-const has = require("./has.js");
+import isStr from "./utils/isStr.js";
+import has from "./has.js";
 
 // Function: Returns the distance between two substrings in the string
 function distance(string, substring1, substring2){
@@ -13,4 +13,4 @@ function distance(string, substring1, substring2){
 	}
 }
 
-module.exports = distance;
+export default distance;

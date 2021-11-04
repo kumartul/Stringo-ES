@@ -3,4 +3,4 @@ function isInt(input){
 	return Number.isInteger(input);
 }
 
-module.exports = isInt;
+export default isInt;

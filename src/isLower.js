@@ -1,4 +1,4 @@
-const isStr = require("./utils/isStr.js");
+import isStr from "./utils/isStr.js";
 
 // Function: Checks whether a string is in lowercase or not
 function isLower(string){
@@ -10,4 +10,4 @@ function isLower(string){
 	}
 }
 
-module.exports = isLower;
+export default isLower;

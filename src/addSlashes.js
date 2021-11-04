@@ -1,5 +1,5 @@
-const isStr = require('./utils/isStr.js');
-const validator = require('validator');
+import isStr from './utils/isStr.js';
+import validator from 'validator';
 
 // Function: Escapes special characters in the string by adding a backward slash before
 // them
@@ -8,7 +8,7 @@ function addSlashes(string){
 		let chars = string.split("");
 		let finalArr = [];
 		chars.forEach(char => {
-			if(!validator.default.isAlphanumeric(char)){
+			if(!validator.isAlphanumeric(char)){
 				finalArr.push("\\" + char);
 			}
 			else{
@@ -22,4 +22,4 @@ function addSlashes(string){
 	}
 }
 
-module.exports = addSlashes;
+export default addSlashes;

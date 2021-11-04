@@ -1,4 +1,4 @@
-const isStr = require("./utils/isStr.js");
+import isStr from "./utils/isStr.js";
 
 const regex = /^\d+$/;
 
@@ -12,4 +12,4 @@ function isDigit(string){
 	}
 }
 
-module.exports = isDigit;
+export default isDigit;

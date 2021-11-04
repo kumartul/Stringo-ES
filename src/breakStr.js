@@ -1,5 +1,5 @@
-const isStr = require("./utils/isStr.js");
-const has = require("./has.js");
+import isStr from "./utils/isStr.js";
+import has from "./has.js";
 
 // Function: Breaks a string into two parts based on a substring
 function breakStr(string, substring){
@@ -21,4 +21,4 @@ function breakStr(string, substring){
 	}
 }
 
-module.exports = breakStr;
+export default breakStr;

@@ -1,4 +1,4 @@
-const isStr = require("./utils/isStr.js");
+import isStr from "./utils/isStr.js";
 
 // Function: Counts the occurrence of a substring in the string
 function count(string, substring, caseSensitive=true){
@@ -22,4 +22,4 @@ function count(string, substring, caseSensitive=true){
 	}
 }
 
-module.exports = count;
+export default count;

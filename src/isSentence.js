@@ -1,6 +1,6 @@
-const isStr = require("./utils/isStr.js");
+import isStr from "./utils/isStr.js";
 
-const changeCase = require("./changeCase.js");
+import changeCase from "./changeCase.js";
 
 // Function: Checks whether a string is in sentence case or not
 function isSentence(string){
@@ -12,4 +12,4 @@ function isSentence(string){
 	}
 }
 
-module.exports = isSentence;
+export default isSentence;

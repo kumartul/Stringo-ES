@@ -1,4 +1,4 @@
-const isStr = require("./utils/isStr.js");
+import isStr from "./utils/isStr.js";
 
 // Function: Sorts the characters in a string
 function sortChars(string, ascending=true){
@@ -24,5 +24,7 @@ function sortWords(string, ascending=true){
 	}
 }
 
-module.exports.sortChars = sortChars;
-module.exports.sortWords = sortWords;
+const _sortChars = sortChars;
+export { _sortChars as sortChars };
+const _sortWords = sortWords;
+export { _sortWords as sortWords };

@@ -1,4 +1,4 @@
-const isStr = require("./utils/isStr.js");
+import isStr from "./utils/isStr.js";
 
 // Function: Checks whether the string is in uppercase or not
 function isUpper(string){
@@ -10,4 +10,4 @@ function isUpper(string){
 	}
 }
 
-module.exports = isUpper;
+export default isUpper;

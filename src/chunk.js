@@ -1,7 +1,7 @@
-const isStr = require("./utils/isStr.js");
-const isInt = require("./utils/isInt.js");
+import isStr from "./utils/isStr.js";
+import isInt from "./utils/isInt.js";
 
-const Arrayism = require("arrayism");
+import { chunk as _chunk } from "arrayism";
 
 // Function: Divides the string into chunks of even length
 // If the length of all the chunks cannot be even, then the remaining elements are put in the
@@ -10,7 +10,7 @@ function chunk(string, length){
 	if(isStr(string)){
 		if(isInt(length)){
 			let chars = string.split("");
-			return Arrayism.chunk(chars, length);
+			return _chunk(chars, length);
 		}
 		else{
 			throw new TypeError("Failed to execute 'chunk': Length must be an integer");
@@ -21,4 +21,4 @@ function chunk(string, length){
 	}
 }
 
-module.exports = chunk;
+export default chunk;

@@ -3,4 +3,4 @@ function isObj(input){
 	return typeof input === "object";
 }
 
-module.exports = isObj;
+export default isObj;

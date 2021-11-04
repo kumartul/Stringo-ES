@@ -1,7 +1,7 @@
-const isStr = require('./utils/isStr.js');
-const nth = require('./nth.js');
-const reverse = require('./reverse.js');
-const removeWhitespace = require('./removeWhitespace.js');
+import isStr from './utils/isStr.js';
+import nth from './nth.js';
+import reverse from './reverse.js';
+import removeWhitespace from './removeWhitespace.js';
 
 // Python-style string slicing
 function pySlice(string, sliceCode){
@@ -126,4 +126,4 @@ function pySlice(string, sliceCode){
 	}
 }
 
-module.exports = pySlice;
+export default pySlice;

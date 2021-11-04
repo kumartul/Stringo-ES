@@ -1,5 +1,5 @@
-const isStr = require('./utils/isStr.js');
-const md_5 = require('blueimp-md5');
+import isStr from './utils/isStr.js';
+import md_5 from 'blueimp-md5';
 
 // Function: Hashes a string using md5 algorithm
 function md5(string){
@@ -11,4 +11,4 @@ function md5(string){
 	}
 }
 
-module.exports = md5;
+export default md5;

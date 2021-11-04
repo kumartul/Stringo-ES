@@ -1,5 +1,5 @@
-const isStr = require('./utils/isStr.js');
-const remove = require('./remove.js');
+import isStr from './utils/isStr.js';
+import remove from './remove.js';
 
 // Function: Strips the slashes before special characters in the string
 function stripSlashes(string){
@@ -11,4 +11,4 @@ function stripSlashes(string){
 	}
 }
 
-module.exports = stripSlashes;
+export default stripSlashes;

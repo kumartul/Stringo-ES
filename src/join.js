@@ -1,5 +1,5 @@
-const isStr = require("./utils/isStr.js");
-const isObj = require("./utils/isObj.js");
+import isStr from "./utils/isStr.js";
+import isObj from "./utils/isObj.js";
 
 // Function: Joins two or more strings
 function join(string, ...strings){
@@ -24,4 +24,4 @@ function join(string, ...strings){
 	}
 }
 
-module.exports = join;
+export default join;
